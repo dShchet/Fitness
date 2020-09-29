@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:og="http://ogp.me/ns#" lang="<?=LANGUAGE_ID;?>">
+  <head xmlns:og="http://ogp.me/ns#">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yourwebsite.ru/" />
+    <meta property="og:title" content="Your website" />
+    <meta
+      property="og:description"
+      content="<?$APPLICATION->ShowProperty('description');?>"
+    />
+    <meta property="og:image" content="https://www.yourwebsite.ru/logo.png" />
+    <!-- Font -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>Фитнес</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container--fluid">
+        <div class="header__inner">
+          <img
+            src="./img/burger.png"
+            class="nav__burger"
+            id="burgerOpen"
+            alt="Burger menu"
+          />
+          <!-- <img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu"> -->
+          <div class="header__phone">
+            8 (985) <span class="header__phone__large">777 34 56</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <picture class="intro__img__pfroffesional">
+            <source
+              srcset="./img/prof--mobile.svg"
+              media="(max-width: 767px)"
+            />
+            <img src="./img/prof.svg" alt="Professional" />
+          </picture>
+          <img
+            src="./img/Fitness.svg"
+            class="intro__img__fitness"
+            alt="Fitness"
+          />
+          <div class="intro__about">
+            <div class="intro__header">
+              <h1 class="intro__title">Фитнес тренер</h1>
+              <h2 class="intro__subtitle contur">Ирина Петрова</h2>
+            </div>
+            <div class="intro__info">
+              ПЕРВАЯ ТРЕНИРОВКА<span class="contur--violet intro__info__large"
+                >бесплатно</span
+              >
+            </div>
+            <button type="button" class="intro__btn btn btn--intro">
+              Записаться
+            </button>
+            <div class="intro__social social">
+              <a href="#" class="social__link">
+                <img
+                  src="./img/instagram.svg"
+                  alt="instagram"
+                  class="social__link__img"
+                />
+              </a>
+              <a href="#" class="social__link">
+                <img
+                  src="./img/facebook.svg"
+                  alt="facebook"
+                  class="social__link__img"
+                />
+              </a>
+              <a href="#" class="social__link">
+                <img
+                  src="./img/whatsapp.svg"
+                  alt="whatsapp"
+                  class="social__link__img"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="intro__photo">
+            <img
+              src="./img/circle.svg"
+              class="intro__bg__circle"
+              alt="circle"
+            />
+            <picture class="intro__woman">
+              <source
+                srcset="./img/woman--mobile.png"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./img/woman--tablet.png"
+                media="(max-width: 1199px)"
+              />
+              <img src="./img/woman.png" alt="woman" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__info">
+            <div class="about__wrapper">
+              <div class="about__header">
+                <span class="number number--about">01</span>
+              </div>
+              <h2 class="title title--about">О ТРЕНЕРЕ</h2>
+            </div>
+            <div class="about__text">
+              <p class="about__text__section">
+                Функциональные, силовые, кардио, танцевальные тренировки,
+                пограммы mind body, включая Pilates, Stretch. Подготовка к
+                соревнованиям по бодибилдингу и фитнесу. Укрепление
+                опорно-двигательного аппарата.
+              </p>
+              <p class="about__text__section">
+                Инструктор года 2011. 2-х кратный бронзовый призёр в категории
+                фитнес Кубка Москвы по бодибилдингу и фитнесу. Чемпионка России
+                2008 г.
+              </p>
+            </div>
+            <button class="about__btn btn btn--big">
+              <span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span>
+              <img src="./img/arrow.svg" alt="->" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="about__photo">
+        <div class="about__photo__wrapper">
+          <picture class="about__photo__second">
+            <source
+              srcset="./img/about__bg-2--mobile.png"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./img/about__bg-2--tablet.png"
+              media="(max-width: 1199px)"
+            />
+            <img src="./img/about__bg-2.png" alt="woman" />
+          </picture>
+          <picture class="about__photo__first">
+            <source
+              srcset="./img/about__bg-1--mobile.png"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./img/about__bg-1--tablet.png"
+              media="(max-width: 1199px)"
+            />
+            <img src="./img/about__bg-1.png" alt="woman" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="tranings">
+      <div class="container container--tranings">
+        <div class="tranings__header">
+          <span class="number number--tranings">02</span>
+          <h2 class="title title--tranings">ТРЕНИРОВКИ</h2>
+        </div>
+        <img
+          src="./img/arrowYellow--prev.png"
+          class="arrow__yellow arrow__yellow--prev  tranings__arrow tranings__arrow--prev"
+          alt="Left"
+          id="traningsPrev"
+        />
+        <img
+          src="./img/arrowYellow--next.png"
+          class="arrow__yellow arrow__yellow--next tranings__arrow tranings__arrow--next"
+          alt="Right"
+          id="traningsNext"
+        />
+        <div class="tranings__inner">
+          <div class="tranings__item" id="traningItem-1">
+            <div class="tranings__item__photo">
+              <img src="./img/streching.png" class="tranings__item__photo__woman" alt="стретчинг изображение" />
+              <img
+                src="./img/border.svg"
+                alt="Border"
+                class="tranings__item__border"
+                id="traningBorder-1"
+              />
+              <div class="tranings__item__content" id="traningContent-1">
+                <h4 class="tranings__item__content__title">
+                  ПРОГРАММА ВКЛЮЧАЕТ:
+                </h4>
+                <div class="tranings__item__content__description">
+                  <p class="tranings__item__text">— Программа питания</p>
+                  <p class="tranings__item__text">— Индивидуальные занятия</p>
+                  <p class="tranings__item__text">— Программа тренировок</p>
+                </div>
+                <div class="tranings__item__content__footer">
+                  <button type="button" class="tranings__btn btn btn--yellow2">
+                    Записаться
+                  </button>
+                  <div class="tranings__item__content__price">
+                    Стоимость:<br class="br" />
+                    <span>7 500руб.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="tranings__item__title">
+              <img src="./img/line-title.svg" alt="-" />
+              <span>СТРЕТЧИНГ</span>
+            </h4>
+          </div>
+
+          <div class="tranings__item" id="traningItem-2">
+            <div class="tranings__item__photo">
+              <img src="./img/pohudenie.png" class="tranings__item__photo__woman" alt="стретчинг изображение" />
+              <img
+                src="./img/border.svg"
+                alt="Border"
+                class="tranings__item__border"
+                id="traningBorder-2"
+              />
+              <div class="tranings__item__content" id="traningContent-2">
+                <h4 class="tranings__item__content__title">
+                  ПРОГРАММА ВКЛЮЧАЕТ:
+                </h4>
+                <div class="tranings__item__content__description">
+                  <p class="tranings__item__text">— Программа питания</p>
+                  <p class="tranings__item__text">— Индивидуальные занятия</p>
+                  <p class="tranings__item__text">— Программа тренировок</p>
+                </div>
+                <div class="tranings__item__content__footer">
+                  <button type="button" class="tranings__btn btn btn--yellow2">
+                    Записаться
+                  </button>
+                  <div class="tranings__item__content__price">
+                    Стоимость:<br class="br" />
+                    <span>7 500руб.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="tranings__item__title">
+              <img src="./img/line-title.svg" alt="-" />
+              <span>ПОХУДЕНИЕ</span>
+            </h4>
+          </div>
+
+          <div class="tranings__item" id="traningItem-3">
+            <div class="tranings__item__photo">
+              <img src="./img/pitanie.png" class="tranings__item__photo__woman tranings__item__photo__woman--big" alt="стретчинг изображение" />
+              <img
+                src="./img/border.svg"
+                alt="Border"
+                class="tranings__item__border"
+                id="traningBorder-3"
+              />
+              <div class="tranings__item__content" id="traningContent-3">
+                <h4 class="tranings__item__content__title">
+                  ПРОГРАММА ВКЛЮЧАЕТ:
+                </h4>
+                <div class="tranings__item__content__description tranings__item__content__description--big">
+                  <p class="tranings__item__text">— Программа питания</p>
+                  <p class="tranings__item__text">— Индивидуальные занятия</p>
+                  <p class="tranings__item__text">— Программа тренировок</p>
+                </div>
+                <div class="tranings__item__content__footer">
+                  <button type="button" class="tranings__btn btn btn--yellow2">
+                    Записаться
+                  </button>
+                  <div class="tranings__item__content__price">
+                    Стоимость:<br class="br" />
+                    <span>7 500руб.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="tranings__item__title">
+              <img src="./img/line-title.svg" alt="-" />
+              <span>ПИТАНИЕ</span>
+            </h4>
+          </div>
+
+          <div class="tranings__item" id="traningItem-4">
+            <div class="tranings__item__photo">
+              <img src="./img/consultation.png" class="tranings__item__photo__woman" alt="стретчинг изображение" />
+              <img
+                src="./img/border.svg"
+                alt="Border"
+                class="tranings__item__border"
+                id="traningBorder-4"
+              />
+              <div class="tranings__item__content" id="traningContent-4">
+                <h4 class="tranings__item__content__title">
+                  ПРОГРАММА ВКЛЮЧАЕТ:
+                </h4>
+                <div class="tranings__item__content__description">
+                  <p class="tranings__item__text">— Программа питания</p>
+                  <p class="tranings__item__text">— Индивидуальные занятия</p>
+                  <p class="tranings__item__text">— Программа тренировок</p>
+                </div>
+                <div class="tranings__item__content__footer">
+                  <button type="button" class="tranings__btn btn btn--yellow2">
+                    Записаться
+                  </button>
+                  <div class="tranings__item__content__price">
+                    Стоимость:<br class="br" />
+                    <span>7 500руб.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="tranings__item__title">
+              <img src="./img/line-title.svg" alt="-" />
+              <span>КОНСУЛЬТАЦИЯ</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <img src="./img/circle.svg" alt="Circle" class="reviews__bg" />
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__content">
+            <div class="reviews__header">
+              <span class="number number--reviews">03</span>
+              <h2 class="title title--reviews">ОТЗЫВЫ</h2>
+            </div>
+            <h2 class="reviews__title">
+              <span class="contur">ТРЕНИРУЙСЯ</span><br />
+              ВМЕСТЕ <span class="contur reviews__title__contur">С НАМИ</span>
+            </h2>
+            <div class="reviews__footer">
+              <button class="reviews__btn btn btn--big">
+                <span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span>
+                <img src="./img/arrow.svg" alt="->" />
+              </button>
+              <div class="social">
+                <a href="#" class="social__link">
+                  <picture>
+                    <source
+                      srcset="./img/instagram-yellow.svg"
+                      media="(max-width: 1199px)"
+                    />
+                    <img
+                      src="./img/instagram.svg"
+                      alt="instagram"
+                      class="social__link__img social__yellow--instagram"
+                    />
+                  </picture>
+                </a>
+                <a href="#" class="social__link">
+                  <picture>
+                    <source
+                      srcset="./img/facebook-yellow.svg"
+                      media="(max-width: 1199px)"
+                    />
+                    <img
+                      src="./img/facebook.svg"
+                      alt="facebook"
+                      class="social__link__img social__yellow--facebook"
+                    />
+                  </picture>
+                </a>
+                <a href="#" class="social__link">
+                  <picture>
+                    <source
+                      srcset="./img/whatsapp-yellow.svg"
+                      media="(max-width: 1199px)"
+                    />
+                    <img
+                      src="./img/whatsapp.svg"
+                      alt="whatsapp"
+                      class="social__link__img social__yellow--whatsapp"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__phone__wrapper">
+            <div class="reviews__photo">
+              <img
+              src="./img/arrowPrev.png"
+              class="reviews__photo__arrow reviews__photo__arrow--prev"
+              alt="Left"
+              id="sliderPrev"
+            />
+            <img
+              src="./img/phone-black.png"
+              class="reviews__photo__phone"
+              alt="Phone"
+            />
+            <img
+              src="./img/arrowNext.png"
+              class="reviews__photo__arrow reviews__photo__arrow--next"
+              alt="right"
+              id="sliderNext"
+            />
+          </div>
+          <div class="reviews__phone__content" id="phoneSlider">
+            <div>
+              <img src="./img/phone-content.png" alt="photo" />
+            </div>
+            <div>
+              <img src="./img/phone-content.png" alt="photo" />
+            </div>
+            <div>
+              <img src="./img/phone-content.png" alt="photo" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="container">
+        <img
+          src="./img/arrowYellow--prev.png"
+          class="arrow__yellow arrow__yellow--prev offers__arrow tranings__arrow tranings__arrow--prev"
+          alt="Left"
+          id="offersPrev"
+        />
+        <img
+          src="./img/arrowYellow--next.png"
+          class="arrow__yellow arrow__yellow--next offers__arrow tranings__arrow tranings__arrow--next"
+          alt="Right"
+          id="offersNext"
+        />
+        <h4 class="offers__hidden__title">ЕЩЕ НЕ ГОТОВ К ЛЕТУ?</h4>
+        <div class="offers__header">
+          <span class="number number--offers">04</span>
+          <h2 class="title offers__title">СПЕЦПРЕДЛОЖЕНИЯ</h2>
+        </div>
+        <div class="offers__inner">
+          <div class="offers__item" id="offersItem-1">
+            <img
+              src="./img/offers__img--1.png"
+              alt="offers__img"
+              class="offers__img"
+            />
+            <div class="offers__description">
+              <div class="offers__description__content">
+                <div class="offers__description__title">
+                  <h4>ОДИН + ОДИН = ?</h4>
+                  <!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
+                </div>
+                <div class="offers__description__text">
+                  <!-- <img src="./img/offers__line__big.svg" alt="/"> -->
+                  <p>
+                    <img src="./img/offers_line.svg" class="offers__line" id="offersLine-1" alt="/">
+                    Закажите две тренировки по стретчингу и получите третью
+                    <b>в подарок</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__item" id="offersItem-2">
+            <img
+              src="./img/offers__img--2.png"
+              alt="offers__img"
+              class="offers__img"
+            />
+            <div class="offers__description">
+              <div class="offers__description__content">
+                <div class="offers__description__title">
+                  <h4>УДАР ПО ЖИРУ!</h4>
+                  <!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
+                </div>
+                <div class="offers__description__text">
+                  <!-- <img src="./img/offers__line__big.svg" alt="/"> -->
+                  <p>
+                    <img src="./img/offers_line.svg" class="offers__line" id="offersLine-2" alt="/">
+                    Только в феврале персональные занятия на 10 тренировок
+                    <b>со скидкой 15%</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__item" id="offersItem-3">
+            <img
+              src="./img/offers__img--3.png"
+              alt="offers__img"
+              class="offers__img"
+            />
+            <div class="offers__description">
+              <div class="offers__description__content">
+                <div class="offers__description__title">
+                  <h4>ЕЩЕ НЕ ГОТОВ К ЛЕТУ?</h4>
+                  <!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
+                </div>
+                <div class="offers__description__text">
+                  <!-- <img src="./img/offers__line__big.svg" alt="/"> -->
+                  <p>
+                    <img src="./img/offers_line.svg" class="offers__line" id="offersLine-3" alt="/">
+                    Хватит ждать!<br>
+                    Только в январе программа питания
+                    <b>со скидкой 5%</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="offers__item" id="offersItem-4">
+            <img
+              src="./img/offers__img--4.png"
+              alt="offers__img"
+              class="offers__img"
+            />
+            <div class="offers__description">
+              <div class="offers__description__content">
+                <div class="offers__description__title">
+                  <h4>ОЧЕНЬ ВЕСЕННИЕ ЦЕНЫ!</h4>
+                  <!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
+                </div>
+                <div class="offers__description__text">
+                  <!-- <img src="./img/offers__line__big.svg" alt="/"> -->
+                  <p>
+                    <img src="./img/offers_line.svg" class="offers__line" id="offersLine-4" alt="/">
+                    Персональные тренировки в всего за <b>2999 рублей</b>!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./img/circle--mobile.svg" class="offers__bg" alt="Circle" />
+    </section>
+
+    <section class="connection">
+      <img src="./img/circle-big.svg" class="connection__bg" alt="Circle" />
+      <img
+        src="./img/connection__header__bg--mobile.svg"
+        class="connection__header__bg"
+        alt="Figure"
+      />
+      <div class="container">
+        <div class="connection__inner">
+          <div class="connection__content">
+            <div class="connection__header">
+              <span class="number number--connection">05</span>
+            </div>
+            <h2 class="connection__title title">
+              ПОРАБОТАЕМ
+              <span class="connection__title__contur contur--violet"
+                >ВМЕСТЕ?</span
+              >
+            </h2>
+            <form class="form">
+              <img
+                src="./img/form__icon-1.svg"
+                class="form__imput__img form__imput__img--1"
+                alt="Persone"
+              />
+              <img
+                src="./img/form__icon-2.svg"
+                class="form__imput__img form__imput__img--2"
+                alt="Phone"
+              />
+              <input
+                class="form__input"
+                id="inputEmail"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="form__input"
+                id="inputMessage"
+                type="text"
+                placeholder="Сообщение"
+                required
+              />
+              <p class="form__text">
+                Нажимая кнопку “Отправить”, Вы соглашаетесь с условиями
+                обработки <a href="#" class="form__link">персональных данных</a>
+              </p>
+              <button type="button" class="btn btn--form">Отправить</button>
+            </form>
+          </div>
+          <div class="connection__photo">
+            <picture>
+              <source
+                srcset="./img/woman-2--mobile.png"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./img/woman-2--tablet.png"
+                media="(max-width: 1024px)"
+              />
+              <img src="./img/woman-2.png" alt="Woman" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="social footer__social">
+            <a href="#" class="social__link">
+              <img
+                src="./img/instagram.svg"
+                alt="instagram"
+                class="social__link__img"
+              />
+            </a>
+            <a href="#" class="social__link">
+              <img
+                src="./img/facebook.svg"
+                alt="facebook"
+                class="social__link__img"
+              />
+            </a>
+            <a href="#" class="social__link">
+              <img
+                src="./img/whatsapp.svg"
+                alt="whatsapp"
+                class="social__link__img"
+              />
+            </a>
+          </div>
+          <p class="footer__text">
+            Все права защищены. © Ирина Петрова. 2019 год.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Nav Modal Window -->
+    <nav class="nav" id="nav">
+      <div class="nav__wrapper">
+        <div class="container--fluid">
+          <div class="nav__header__inner">
+            <!-- <img src="./img/burger.png" class="nav__burger active" id="burgerOpen" alt="Burger menu"> -->
+            <img
+              src="./img/close.svg"
+              class="nav__burger"
+              id="burgerClose"
+              alt="Burger menu"
+            />
+            <div class="nav__phone header__phone">
+              8 (985) <span class="header__phone__large">777 34 56</span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="nav__inner">
+            <div class="nav__list">
+              <a
+                href="#"
+                class="nav__link  active"
+                id="link__01"
+                data-mouse="#01"
+                ><span class="nav__number__item nav__number__item--sm">01</span>
+                ГЛАВНАЯ</a
+              >
+              <a href="#" class="nav__link" id="link__02" data-mouse="#02"
+                ><span class="nav__number__item nav__number__item--sm">02</span>
+                О ТРЕНЕРЕ</a
+              >
+              <a href="#" class="nav__link" id="link__03" data-mouse="#03"
+                ><span class="nav__number__item nav__number__item--sm">03</span>
+                ТРЕНИРОВКИ</a
+              >
+              <a href="#" class="nav__link" id="link__04" data-mouse="#04"
+                ><span class="nav__number__item nav__number__item--sm">04</span>
+                ОТЗЫВЫ</a
+              >
+              <a href="#" class="nav__link" id="link__05" data-mouse="#05"
+                ><span class="nav__number__item nav__number__item--sm">05</span>
+                АКЦИИ</a
+              >
+            </div>
+
+            <div class="nav__number">
+              <div class="nav__number__item active" id="01">01</div>
+              <div class="nav__number__item" id="02">02</div>
+              <div class="nav__number__item" id="03">03</div>
+              <div class="nav__number__item" id="04">04</div>
+              <div class="nav__number__item" id="05">05</div>
+            </div>
+          </div>
+          <div class="nav__btn__wrapper">
+            <button type="button" class="nav__btn btn btn--yellow">
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- JS -->
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
